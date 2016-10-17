@@ -1,6 +1,55 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome/scss/font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
+
+$white: hsl(0, 0%, 21%);
+
+@import 'bulma/bulma';
+@import 'font-awesome/scss/font-awesome';
+
+.page {
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+
+  &-block {
+    color: #fff;
+  }
+}
+
+.results {
+  overflow: scroll;
+}
+
+.track {
+  &__media {
+    @extend .media-left;
+  }
+
+  &__frame {
+    @extend .image.is-64x64;
+  }
+
+  &__artist {
+    @extend .title;
+    @extend .title.is-4;
+
+    color: #fff;
+  }
+
+  &__name {
+    @extend .title;
+    @extend .subtitle;
+
+    color: #fff;
+  }
+}
