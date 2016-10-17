@@ -1,10 +1,8 @@
-import './data';
-
 export default class model {
   constructor(data) {
-    this.artist = data.artist;
+    this.artist = data.artists[0].name;
     this.name = data.name;
-    this.image = data.image;
-    this.url = data.url;
+    this.image = data.album.images[0].url;
+    this.href = data.href;
   }
 }
