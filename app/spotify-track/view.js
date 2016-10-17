@@ -9,9 +9,9 @@ export default class view {
     this.track.classList.add('panel-block', 'track');
     this.track.innerHTML = `
     <div class="panel-block track">
-    <img src="" alt="">
+    <img class="track__img" src="" alt="">
     <h2 class="track__artist"></h2>
-    <h4 class="track__name"></h4>
+    <h4 class="track__name"><a class="track__link" href=""></a></h4>
     </div>`;
   }
   render() {
